@@ -23,17 +23,6 @@ public class UserDetailsController {
 	
 	@PostMapping("/register")
 	public UserInfo registerUser(@RequestBody UserInfo userInfo) {
-		
-		System.out.println(userInfo.getName());
-		System.out.println(userInfo.getAddress());
-		System.out.println(userInfo.getEmail());
-		System.out.println(userInfo.getCompany());
-		System.out.println(userInfo.getMobile());
-		
-		System.out.println(userInfo.isEmailVerified());
-		System.out.println(userInfo.isMobileVerified());
-
-
 		return userInfo; 
 	}
 }
